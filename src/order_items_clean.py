@@ -25,3 +25,6 @@ print(order_items["freight_value"].dtype)
 
 #查看主键是否有重复值
 print(order_items.head(6))
+
+#导出数据
+order_items.to_csv("data/processed/order_items.csv", index=False)

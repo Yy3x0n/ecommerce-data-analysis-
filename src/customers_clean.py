@@ -14,3 +14,7 @@ print(customers["customer_unique_id"].duplicated().sum())
 
 # 每个州的订单数量
 print(customers["customer_state"].value_counts())
+
+
+# 导出数据
+customers.to_csv("data/processed/customers.csv", index=False)

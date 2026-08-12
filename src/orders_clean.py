@@ -26,3 +26,6 @@ print(orders.head(5))
 print(orders.isnull().sum())
 # 查询重复值
 print("重复订单：", orders["order_id"].duplicated().sum())
+
+# 导出数据
+orders.to_csv("data/processed/orders.csv", index=False)

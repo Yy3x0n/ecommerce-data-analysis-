@@ -25,3 +25,5 @@ print("每笔订单的支付次数：", order_payments.groupby("order_id")["paym
 
 
 
+# 导出数据
+order_payments.to_csv("data/processed/order_payments.csv", index=False)

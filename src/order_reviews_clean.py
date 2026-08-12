@@ -36,5 +36,8 @@ print(order_reviews.dtypes)
 print(order_reviews[(order_reviews["review_score"] < 0) | (order_reviews["review_score"] > 5)])
 
 
+# 导出数据
+order_reviews.to_csv("data/processed/order_reviews_dataset.csv", index=False)
+
 
 
