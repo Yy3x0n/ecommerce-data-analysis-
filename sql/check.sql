@@ -1,3 +1,5 @@
+-- 数据库及数据完整性检查
+
 USE ecommerce;
 
 SELECT 'customers' AS table_name, COUNT(*) AS row_count
